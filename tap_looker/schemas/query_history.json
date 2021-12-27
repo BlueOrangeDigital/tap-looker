@@ -93,6 +93,7 @@
               "history_created_date",
               "dims_hash_key"
             ],
+            "selected": "true",
             "forced-replication-method": "FULL_TABLE",
             "inclusion": "available"
           }

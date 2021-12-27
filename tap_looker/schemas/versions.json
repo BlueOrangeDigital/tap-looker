@@ -100,6 +100,7 @@
             "table-key-properties": [
               "looker_release_version"
             ],
+            "selected": "true",
             "forced-replication-method": "FULL_TABLE",
             "inclusion": "available"
           }

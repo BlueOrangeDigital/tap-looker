@@ -111,6 +111,7 @@
               "name",
               "project_name"
             ],
+            "selected": "true",
             "forced-replication-method": "FULL_TABLE",
             "inclusion": "available"
           }

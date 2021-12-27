@@ -295,6 +295,7 @@
             "table-key-properties": [
               "id"
             ],
+            "selected": "true",
             "forced-replication-method": "FULL_TABLE",
             "inclusion": "available"
           }

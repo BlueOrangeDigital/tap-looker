@@ -84,6 +84,7 @@
               "user_id",
               "user_attribute_id"
             ],
+            "selected": "true",
             "forced-replication-method": "FULL_TABLE",
             "inclusion": "available"
           }

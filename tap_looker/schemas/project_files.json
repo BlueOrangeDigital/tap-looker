@@ -105,6 +105,7 @@
               "id",
               "project_id"
             ],
+            "selected": "true",
             "forced-replication-method": "FULL_TABLE",
             "inclusion": "available"
           }
