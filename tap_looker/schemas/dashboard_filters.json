@@ -1,0 +1,267 @@
+{
+    "streams": [
+        {
+            "tap_stream_id": "dashboard_filters",
+            "key_properties": [
+              "id"
+            ],
+            "schema": {
+              "properties": {
+                "allow_multiple_values": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "dashboard_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "default_value": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "dimension": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "explore": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "field": {
+                  "properties": {},
+                  "type": [
+                    "null",
+                    "object"
+                  ],
+                  "additionalProperties": true
+                },
+                "id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "listens_to_filters": {
+                  "items": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "type": [
+                    "null",
+                    "array"
+                  ]
+                },
+                "model": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "name": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "required": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "row": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "title": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "type": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "ui_config": {
+                  "properties": {},
+                  "type": [
+                    "null",
+                    "object"
+                  ],
+                  "additionalProperties": true
+                }
+              },
+              "type": [
+                "null",
+                "object"
+              ],
+              "additionalProperties": false
+            },
+            "stream": "dashboard_filters",
+            "metadata": [
+              {
+                "breadcrumb": [],
+                "metadata": {
+                  "table-key-properties": [
+                    "id"
+                  ],
+                  "forced-replication-method": "FULL_TABLE",
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "allow_multiple_values"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "dashboard_id"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "default_value"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "dimension"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "explore"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "field"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "id"
+                ],
+                "metadata": {
+                  "inclusion": "automatic"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "listens_to_filters"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "model"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "name"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "required"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "row"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "title"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "type"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "ui_config"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              }
+            ]
+        }
+    ]
+}

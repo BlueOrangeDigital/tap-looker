@@ -1,0 +1,256 @@
+{
+    "streams": [
+      {
+        "tap_stream_id": "color_collections",
+        "key_properties": [
+          "id"
+        ],
+        "schema": {
+          "properties": {
+            "categoricalPalettes": {
+              "items": {
+                "properties": {
+                  "colors": {
+                    "items": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "type": [
+                      "null",
+                      "array"
+                    ]
+                  },
+                  "id": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "label": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "type": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                },
+                "type": [
+                  "null",
+                  "object"
+                ],
+                "additionalProperties": false
+              },
+              "type": [
+                "null",
+                "array"
+              ]
+            },
+            "divergingPalettes": {
+              "items": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "label": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "stops": {
+                    "items": {
+                      "properties": {
+                        "color": {
+                          "type": [
+                            "null",
+                            "string"
+                          ]
+                        },
+                        "offset": {
+                          "multipleOf": 1e-16,
+                          "type": [
+                            "null",
+                            "number"
+                          ]
+                        }
+                      },
+                      "type": [
+                        "null",
+                        "object"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "type": [
+                      "null",
+                      "array"
+                    ]
+                  },
+                  "type": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                },
+                "type": [
+                  "null",
+                  "object"
+                ],
+                "additionalProperties": false
+              },
+              "type": [
+                "null",
+                "array"
+              ]
+            },
+            "id": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "label": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "sequentialPalettes": {
+              "items": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "label": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "stops": {
+                    "items": {
+                      "properties": {
+                        "color": {
+                          "type": [
+                            "null",
+                            "string"
+                          ]
+                        },
+                        "offset": {
+                          "multipleOf": 1e-16,
+                          "type": [
+                            "null",
+                            "number"
+                          ]
+                        }
+                      },
+                      "type": [
+                        "null",
+                        "object"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "type": [
+                      "null",
+                      "array"
+                    ]
+                  },
+                  "type": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                },
+                "type": [
+                  "null",
+                  "object"
+                ],
+                "additionalProperties": false
+              },
+              "type": [
+                "null",
+                "array"
+              ]
+            }
+          },
+          "type": [
+            "null",
+            "object"
+          ],
+          "additionalProperties": false
+        },
+        "stream": "color_collections",
+        "metadata": [
+          {
+            "breadcrumb": [],
+            "metadata": {
+              "table-key-properties": [
+                "id"
+              ],
+              "forced-replication-method": "FULL_TABLE",
+              "inclusion": "available"
+            }
+          },
+          {
+            "breadcrumb": [
+              "properties",
+              "categoricalPalettes"
+            ],
+            "metadata": {
+              "inclusion": "available"
+            }
+          },
+          {
+            "breadcrumb": [
+              "properties",
+              "divergingPalettes"
+            ],
+            "metadata": {
+              "inclusion": "available"
+            }
+          },
+          {
+            "breadcrumb": [
+              "properties",
+              "id"
+            ],
+            "metadata": {
+              "inclusion": "automatic"
+            }
+          },
+          {
+            "breadcrumb": [
+              "properties",
+              "label"
+            ],
+            "metadata": {
+              "inclusion": "available"
+            }
+          },
+          {
+            "breadcrumb": [
+              "properties",
+              "sequentialPalettes"
+            ],
+            "metadata": {
+              "inclusion": "available"
+            }
+          }
+        ]
+      }
+    ]
+}

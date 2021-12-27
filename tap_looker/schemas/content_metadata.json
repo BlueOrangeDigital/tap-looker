@@ -1,0 +1,197 @@
+{
+    "streams": [
+        {
+            "tap_stream_id": "content_metadata",
+            "key_properties": [
+              "id"
+            ],
+            "schema": {
+              "properties": {
+                "content_type": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "dashboard_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "folder_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "inheriting_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "inherits": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "look_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "name": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "parent_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "slug": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "space_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              },
+              "type": [
+                "null",
+                "object"
+              ],
+              "additionalProperties": false
+            },
+            "stream": "content_metadata",
+            "metadata": [
+              {
+                "breadcrumb": [],
+                "metadata": {
+                  "table-key-properties": [
+                    "id"
+                  ],
+                  "forced-replication-method": "FULL_TABLE",
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "content_type"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "dashboard_id"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "folder_id"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "id"
+                ],
+                "metadata": {
+                  "inclusion": "automatic"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "inheriting_id"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "inherits"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "look_id"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "name"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "parent_id"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "slug"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "space_id"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              }
+            ]
+        }
+    ]
+}

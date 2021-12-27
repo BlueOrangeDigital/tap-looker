@@ -1,0 +1,711 @@
+{
+    "streams": [
+    {
+        "tap_stream_id": "connections",
+        "key_properties": [
+        "name"
+        ],
+        "schema": {
+        "properties": {
+            "after_connect_statements": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "certificate": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "created_at": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "database": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "db_timezone": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "dialect": {
+            "properties": {
+                "automatically_run_sql_runner_snippets": {
+                "type": [
+                    "null",
+                    "boolean"
+                ]
+                },
+                "connection_tests": {
+                "items": {
+                    "type": [
+                    "null",
+                    "string"
+                    ]
+                },
+                "type": [
+                    "null",
+                    "array"
+                ]
+                },
+                "label": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "name": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "persistent_table_distkey": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "persistent_table_indexes": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "persistent_table_sortkeys": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "supports_cost_estimate": {
+                "type": [
+                    "null",
+                    "boolean"
+                ]
+                },
+                "supports_inducer": {
+                "type": [
+                    "null",
+                    "boolean"
+                ]
+                },
+                "supports_streaming": {
+                "type": [
+                    "null",
+                    "boolean"
+                ]
+                },
+                "supports_upload_tables": {
+                "type": [
+                    "null",
+                    "boolean"
+                ]
+                }
+            },
+            "type": [
+                "null",
+                "object"
+            ],
+            "additionalProperties": false
+            },
+            "dialect_name": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "example": {
+            "type": [
+                "null",
+                "boolean"
+            ]
+            },
+            "file_type": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "host": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "jdbc_additional_params": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "last_reap_at": {
+            "type": [
+                "null",
+                "integer"
+            ]
+            },
+            "last_regen_at": {
+            "type": [
+                "null",
+                "integer"
+            ]
+            },
+            "maintenance_cron": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "max_billing_gigabytes": {
+            "multipleOf": 1e-08,
+            "type": [
+                "null",
+                "number"
+            ]
+            },
+            "max_connections": {
+            "type": [
+                "null",
+                "integer"
+            ]
+            },
+            "name": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "password": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "pdt_context_override": {
+            "properties": {
+                "after_connect_statements": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "certificate": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "context": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "database": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "file_type": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "has_password": {
+                "type": [
+                    "null",
+                    "boolean"
+                ]
+                },
+                "host": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "jdbc_additional_params": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "password": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "port": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "schema": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                },
+                "username": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+                }
+            },
+            "type": [
+                "null",
+                "object"
+            ],
+            "additionalProperties": false
+            },
+            "pool_timeout": {
+            "type": [
+                "null",
+                "integer"
+            ]
+            },
+            "port": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "query_timezone": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "schema": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "snippets": {
+            "items": {
+                "properties": {
+                "label": {
+                    "type": [
+                    "null",
+                    "string"
+                    ]
+                },
+                "name": {
+                    "type": [
+                    "null",
+                    "string"
+                    ]
+                },
+                "sql": {
+                    "type": [
+                    "null",
+                    "string"
+                    ]
+                }
+                },
+                "type": [
+                "null",
+                "object"
+                ],
+                "additionalProperties": false
+            },
+            "type": [
+                "null",
+                "array"
+            ]
+            },
+            "sql_runner_precache_tables": {
+            "type": [
+                "null",
+                "boolean"
+            ]
+            },
+            "ssl": {
+            "type": [
+                "null",
+                "boolean"
+            ]
+            },
+            "tmp_db_name": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "user_attribute_fields": {
+            "items": {
+                "type": [
+                "null",
+                "string"
+                ]
+            },
+            "type": [
+                "null",
+                "array"
+            ]
+            },
+            "user_db_credentials": {
+            "type": [
+                "null",
+                "boolean"
+            ]
+            },
+            "user_id": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "username": {
+            "type": [
+                "null",
+                "string"
+            ]
+            },
+            "uses_oauth": {
+            "type": [
+                "null",
+                "boolean"
+            ]
+            },
+            "verify_ssl": {
+            "type": [
+                "null",
+                "boolean"
+            ]
+            }
+        },
+        "type": [
+            "null",
+            "object"
+        ],
+        "additionalProperties": false
+        },
+        "stream": "connections",
+        "metadata": [
+        {
+            "breadcrumb": [],
+            "metadata": {
+            "table-key-properties": [
+                "name"
+            ],
+            "forced-replication-method": "FULL_TABLE",
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "after_connect_statements"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "certificate"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "created_at"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "database"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "db_timezone"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "dialect"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "dialect_name"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "example"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "file_type"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "host"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "jdbc_additional_params"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "last_reap_at"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "last_regen_at"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "maintenance_cron"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "max_billing_gigabytes"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "max_connections"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "name"
+            ],
+            "metadata": {
+            "inclusion": "automatic"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "password"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "pdt_context_override"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "pool_timeout"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "port"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "query_timezone"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "schema"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "snippets"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "sql_runner_precache_tables"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "ssl"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "tmp_db_name"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "user_attribute_fields"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "user_db_credentials"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "user_id"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "username"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "uses_oauth"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        },
+        {
+            "breadcrumb": [
+            "properties",
+            "verify_ssl"
+            ],
+            "metadata": {
+            "inclusion": "available"
+            }
+        }
+        ]
+    }
+]
+}
