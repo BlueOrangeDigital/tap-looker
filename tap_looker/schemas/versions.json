@@ -1,87 +1,138 @@
 {
-  "additionalProperties": false,
-  "properties": {
-    "current_version": {
-      "additionalProperties": false,
-      "properties": {
-        "full_version": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "status": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "swagger_url": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "version": {
-          "type": [
-            "null",
-            "string"
-          ]
-        }
-      },
-      "type": [
-        "null",
-        "object"
-      ]
-    },
-    "looker_release_version": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "supported_versions": {
-      "items": {
-        "additionalProperties": false,
+  "streams": [
+    {
+      "tap_stream_id": "versions",
+      "key_properties": [
+        "looker_release_version"
+      ],
+      "schema": {
         "properties": {
-          "full_version": {
+          "current_version": {
+            "properties": {
+              "full_version": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "status": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "swagger_url": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "version": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "type": [
+              "null",
+              "object"
+            ],
+            "additionalProperties": false
+          },
+          "looker_release_version": {
             "type": [
               "null",
               "string"
             ]
           },
-          "status": {
+          "supported_versions": {
+            "items": {
+              "properties": {
+                "full_version": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "status": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "swagger_url": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "version": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              },
+              "type": [
+                "null",
+                "object"
+              ],
+              "additionalProperties": false
+            },
             "type": [
               "null",
-              "string"
-            ]
-          },
-          "swagger_url": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "version": {
-            "type": [
-              "null",
-              "string"
+              "array"
             ]
           }
         },
         "type": [
           "null",
           "object"
-        ]
+        ],
+        "additionalProperties": false
       },
-      "type": [
-        "null",
-        "array"
+      "stream": "versions",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "table-key-properties": [
+              "looker_release_version"
+            ],
+            "selected": "true",
+            "forced-replication-method": "FULL_TABLE",
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "current_version"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "looker_release_version"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supported_versions"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
       ]
     }
-  },
-  "type": [
-    "null",
-    "object"
   ]
 }

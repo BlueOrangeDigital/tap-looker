@@ -1,63 +1,168 @@
 {
-  "additionalProperties": false,
-  "properties": {
-    "created_at": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "model_name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "stale_before": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "trigger_check_at": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "trigger_error": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "trigger_value": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "triggered_at": {
-      "type": [
-        "null",
-        "integer"
+  "streams": [
+    {
+      "tap_stream_id": "datagroups",
+      "key_properties": [
+        "id"
+      ],
+      "schema": {
+        "properties": {
+          "created_at": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "model_name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "stale_before": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "trigger_check_at": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "trigger_error": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "trigger_value": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "triggered_at": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": [
+          "null",
+          "object"
+        ],
+        "additionalProperties": false
+      },
+      "stream": "datagroups",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "table-key-properties": [
+              "id"
+            ],
+            "selected": "true",
+            "forced-replication-method": "FULL_TABLE",
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "created_at"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "model_name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "stale_before"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "trigger_check_at"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "trigger_error"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "trigger_value"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "triggered_at"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
       ]
     }
-  },
-  "type": [
-    "null",
-    "object"
   ]
 }

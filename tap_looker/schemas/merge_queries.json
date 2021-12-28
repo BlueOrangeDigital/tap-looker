@@ -1,120 +1,225 @@
 {
-  "additionalProperties": false,
-  "properties": {
-    "column_limit": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "dynamic_fields": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "pivots": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "result_maker_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "sorts": {
-      "items": {},
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "source_queries": {
-      "items": {
-        "additionalProperties": false,
-        "properties": {
-          "merge_fields": {
-            "items": {
-              "additionalProperties": false,
+    "streams": [
+        {
+            "tap_stream_id": "merge_queries",
+            "key_properties": [
+              "id"
+            ],
+            "schema": {
               "properties": {
-                "field_name": {
+                "column_limit": {
                   "type": [
                     "null",
                     "string"
                   ]
                 },
-                "source_field_name": {
+                "dynamic_fields": {
                   "type": [
                     "null",
                     "string"
                   ]
+                },
+                "id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "pivots": {
+                  "items": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "type": [
+                    "null",
+                    "array"
+                  ]
+                },
+                "result_maker_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "sorts": {
+                  "items": {},
+                  "type": [
+                    "null",
+                    "array"
+                  ]
+                },
+                "source_queries": {
+                  "items": {
+                    "properties": {
+                      "merge_fields": {
+                        "items": {
+                          "properties": {
+                            "field_name": {
+                              "type": [
+                                "null",
+                                "string"
+                              ]
+                            },
+                            "source_field_name": {
+                              "type": [
+                                "null",
+                                "string"
+                              ]
+                            }
+                          },
+                          "type": [
+                            "null",
+                            "object"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "type": [
+                          "null",
+                          "array"
+                        ]
+                      },
+                      "name": {
+                        "type": [
+                          "null",
+                          "string"
+                        ]
+                      },
+                      "query_id": {
+                        "type": [
+                          "null",
+                          "string"
+                        ]
+                      }
+                    },
+                    "type": [
+                      "null",
+                      "object"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "type": [
+                    "null",
+                    "array"
+                  ]
+                },
+                "total": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "vis_config": {
+                  "properties": {},
+                  "type": [
+                    "null",
+                    "object"
+                  ],
+                  "additionalProperties": true
                 }
               },
               "type": [
                 "null",
                 "object"
-              ]
+              ],
+              "additionalProperties": false
             },
-            "type": [
-              "null",
-              "array"
+            "stream": "merge_queries",
+            "metadata": [
+              {
+                "breadcrumb": [],
+                "metadata": {
+                  "table-key-properties": [
+                    "id"
+                  ],
+                  "selected": "true",
+                  "forced-replication-method": "FULL_TABLE",
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "column_limit"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "dynamic_fields"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "id"
+                ],
+                "metadata": {
+                  "inclusion": "automatic"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "pivots"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "result_maker_id"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "sorts"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "source_queries"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "total"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "vis_config"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              }
             ]
-          },
-          "name": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "query_id": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        },
-        "type": [
-          "null",
-          "object"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "total": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "vis_config": {
-      "additionalProperties": true,
-      "type": [
-        "null",
-        "object"
-      ],
-      "properties": {}
-    }
-  },
-  "type": [
-    "null",
-    "object"
-  ]
+        }
+    ]
 }

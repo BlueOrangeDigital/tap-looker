@@ -1,105 +1,273 @@
 {
-  "additionalProperties": false,
-  "properties": {
-    "allow_warnings": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "deploy_secret": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "folders_enabled": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "git_password": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "git_password_user_attribute": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "git_remote_url": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "git_service_name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "git_username": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "git_username_user_attribute": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "is_example": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "pull_request_mode": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "unset_deploy_secret": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "uses_git": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "validation_required": {
-      "type": [
-        "null",
-        "boolean"
+  "streams": [
+    {
+      "tap_stream_id": "projects",
+      "key_properties": [
+        "id"
+      ],
+      "schema": {
+        "properties": {
+          "allow_warnings": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "deploy_secret": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "folders_enabled": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "git_password": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "git_password_user_attribute": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "git_remote_url": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "git_service_name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "git_username": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "git_username_user_attribute": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "is_example": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "pull_request_mode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "unset_deploy_secret": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "uses_git": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "validation_required": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        },
+        "type": [
+          "null",
+          "object"
+        ],
+        "additionalProperties": false
+      },
+      "stream": "projects",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "table-key-properties": [
+              "id"
+            ],
+            "selected": "true",
+            "forced-replication-method": "FULL_TABLE",
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "allow_warnings"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "deploy_secret"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "folders_enabled"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "git_password"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "git_password_user_attribute"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "git_remote_url"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "git_service_name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "git_username"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "git_username_user_attribute"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "is_example"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "pull_request_mode"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "unset_deploy_secret"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "uses_git"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "validation_required"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
       ]
     }
-  },
-  "type": [
-    "null",
-    "object"
   ]
 }

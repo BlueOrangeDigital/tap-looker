@@ -1,41 +1,112 @@
 {
-  "additionalProperties": false,
-  "properties": {
-    "active": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "column_width": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "dashboard_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "dashboard_layout_components": {
-      "items": {
-        "additionalProperties": false,
+  "streams": [
+    {
+      "tap_stream_id": "dashboard_layouts",
+      "key_properties": [
+        "id"
+      ],
+      "schema": {
         "properties": {
-          "column": {
+          "active": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "column_width": {
             "type": [
               "null",
               "integer"
             ]
           },
-          "dashboard_element_id": {
+          "dashboard_id": {
             "type": [
               "null",
               "string"
             ]
           },
-          "dashboard_layout_id": {
+          "dashboard_layout_components": {
+            "items": {
+              "properties": {
+                "column": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "dashboard_element_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "dashboard_layout_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "deleted": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "element_title": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "element_title_hidden": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "height": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "row": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "vis_type": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "width": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                }
+              },
+              "type": [
+                "null",
+                "object"
+              ],
+              "additionalProperties": false
+            },
+            "type": [
+              "null",
+              "array"
+            ]
+          },
+          "dashboard_title": {
             "type": [
               "null",
               "string"
@@ -47,37 +118,13 @@
               "boolean"
             ]
           },
-          "element_title": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "element_title_hidden": {
-            "type": [
-              "null",
-              "boolean"
-            ]
-          },
-          "height": {
-            "type": [
-              "null",
-              "integer"
-            ]
-          },
           "id": {
             "type": [
               "null",
               "string"
             ]
           },
-          "row": {
-            "type": [
-              "null",
-              "integer"
-            ]
-          },
-          "vis_type": {
+          "type": {
             "type": [
               "null",
               "string"
@@ -93,46 +140,104 @@
         "type": [
           "null",
           "object"
-        ]
+        ],
+        "additionalProperties": false
       },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "dashboard_title": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "deleted": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "type": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "width": {
-      "type": [
-        "null",
-        "integer"
+      "stream": "dashboard_layouts",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "table-key-properties": [
+              "id"
+            ],
+            "selected": "true",
+            "forced-replication-method": "FULL_TABLE",
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "active"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "column_width"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "dashboard_id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "dashboard_layout_components"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "dashboard_title"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "deleted"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "type"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "width"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
       ]
     }
-  },
-  "type": [
-    "null",
-    "object"
   ]
 }

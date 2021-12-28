@@ -1,196 +1,454 @@
 {
-  "additionalProperties": false,
-  "properties": {
-    "client_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "column_limit": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "dynamic_fields": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "expanded_share_url": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "fields": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "fill_fields": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "filter_config": {
-      "additionalProperties": true,
-      "type": [
-        "null",
-        "object"
-      ],
-      "properties": {}
-    },
-    "filter_expression": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "filters": {
-      "additionalProperties": true,
-      "type": [
-        "null",
-        "object"
-      ],
-      "properties": {}
-    },
-    "has_table_calculations": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "limit": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "model": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "pivots": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "query_timezone": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "row_total": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "runtime": {
-      "type": [
-        "null",
-        "number"
-      ]
-    },
-    "share_url": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "slug": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "sorts": {
-      "items": {},
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "subtotals": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "total": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "url": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "view": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "vis_config": {
-      "additionalProperties": true,
-      "type": [
-        "null",
-        "object"
-      ],
-      "properties": {}
-    },
-    "visible_ui_sections": {
-      "type": [
-        "null",
-        "string"
-      ]
-    }
-  },
-  "type": [
-    "null",
-    "object"
-  ]
+    "streams": [
+        {
+            "tap_stream_id": "queries",
+            "key_properties": [
+              "id"
+            ],
+            "schema": {
+              "properties": {
+                "client_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "column_limit": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "dynamic_fields": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "expanded_share_url": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "fields": {
+                  "items": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "type": [
+                    "null",
+                    "array"
+                  ]
+                },
+                "fill_fields": {
+                  "items": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "type": [
+                    "null",
+                    "array"
+                  ]
+                },
+                "filter_config": {
+                  "properties": {},
+                  "type": [
+                    "null",
+                    "object"
+                  ],
+                  "additionalProperties": true
+                },
+                "filter_expression": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "filters": {
+                  "properties": {},
+                  "type": [
+                    "null",
+                    "object"
+                  ],
+                  "additionalProperties": true
+                },
+                "has_table_calculations": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "limit": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "model": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "pivots": {
+                  "items": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "type": [
+                    "null",
+                    "array"
+                  ]
+                },
+                "query_timezone": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "row_total": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "runtime": {
+                  "type": [
+                    "null",
+                    "number"
+                  ]
+                },
+                "share_url": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "slug": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "sorts": {
+                  "items": {},
+                  "type": [
+                    "null",
+                    "array"
+                  ]
+                },
+                "subtotals": {
+                  "items": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "type": [
+                    "null",
+                    "array"
+                  ]
+                },
+                "total": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "url": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "view": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "vis_config": {
+                  "properties": {},
+                  "type": [
+                    "null",
+                    "object"
+                  ],
+                  "additionalProperties": true
+                },
+                "visible_ui_sections": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              },
+              "type": [
+                "null",
+                "object"
+              ],
+              "additionalProperties": false
+            },
+            "stream": "queries",
+            "metadata": [
+              {
+                "breadcrumb": [],
+                "metadata": {
+                  "table-key-properties": [
+                    "id"
+                  ],
+                  "selected": "true",
+                  "forced-replication-method": "FULL_TABLE",
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "client_id"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "column_limit"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "dynamic_fields"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "expanded_share_url"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "fields"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "fill_fields"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "filter_config"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "filter_expression"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "filters"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "has_table_calculations"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "id"
+                ],
+                "metadata": {
+                  "inclusion": "automatic"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "limit"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "model"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "pivots"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "query_timezone"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "row_total"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "runtime"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "share_url"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "slug"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "sorts"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "subtotals"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "total"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "url"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "view"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "vis_config"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              },
+              {
+                "breadcrumb": [
+                  "properties",
+                  "visible_ui_sections"
+                ],
+                "metadata": {
+                  "inclusion": "available"
+                }
+              }
+            ]
+        }
+    ]
 }

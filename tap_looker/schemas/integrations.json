@@ -1,62 +1,16 @@
 {
-  "additionalProperties": false,
-  "properties": {
-    "delegate_oauth": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "description": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "enabled": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "icon_url": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "installed_delegate_oauth": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "integration_hub_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "label": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "params": {
-      "items": {
-        "additionalProperties": false,
+  "streams": [
+    {
+      "tap_stream_id": "integrations",
+      "key_properties": [
+        "id"
+      ],
+      "schema": {
         "properties": {
-          "delegate_oauth_url": {
+          "delegate_oauth": {
             "type": [
               "null",
-              "string"
+              "boolean"
             ]
           },
           "description": {
@@ -65,10 +19,34 @@
               "string"
             ]
           },
-          "has_value": {
+          "enabled": {
             "type": [
               "null",
               "boolean"
+            ]
+          },
+          "icon_url": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "installed_delegate_oauth": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "integration_hub_id": {
+            "type": [
+              "null",
+              "string"
             ]
           },
           "label": {
@@ -77,58 +55,127 @@
               "string"
             ]
           },
-          "name": {
+          "params": {
+            "items": {
+              "properties": {
+                "delegate_oauth_url": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "description": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "has_value": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "label": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "name": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "per_user": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "required": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "sensitive": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "user_attribute_name": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "value": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              },
+              "type": [
+                "null",
+                "object"
+              ],
+              "additionalProperties": false
+            },
             "type": [
               "null",
-              "string"
+              "array"
             ]
           },
-          "per_user": {
+          "required_fields": {
+            "items": {
+              "properties": {
+                "all_tags": {
+                  "items": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "type": [
+                    "null",
+                    "array"
+                  ]
+                },
+                "any_tag": {
+                  "items": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "type": [
+                    "null",
+                    "array"
+                  ]
+                },
+                "tag": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              },
+              "type": [
+                "null",
+                "object"
+              ],
+              "additionalProperties": false
+            },
             "type": [
               "null",
-              "boolean"
+              "array"
             ]
           },
-          "required": {
-            "type": [
-              "null",
-              "boolean"
-            ]
-          },
-          "sensitive": {
-            "type": [
-              "null",
-              "boolean"
-            ]
-          },
-          "user_attribute_name": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "value": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        },
-        "type": [
-          "null",
-          "object"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "required_fields": {
-      "items": {
-        "additionalProperties": false,
-        "properties": {
-          "all_tags": {
+          "supported_action_types": {
             "items": {
               "type": [
                 "null",
@@ -140,7 +187,7 @@
               "array"
             ]
           },
-          "any_tag": {
+          "supported_download_settings": {
             "items": {
               "type": [
                 "null",
@@ -152,92 +199,213 @@
               "array"
             ]
           },
-          "tag": {
+          "supported_formats": {
+            "items": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
             "type": [
               "null",
-              "string"
+              "array"
+            ]
+          },
+          "supported_formattings": {
+            "items": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "type": [
+              "null",
+              "array"
+            ]
+          },
+          "supported_visualization_formattings": {
+            "items": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "type": [
+              "null",
+              "array"
+            ]
+          },
+          "uses_oauth": {
+            "type": [
+              "null",
+              "boolean"
             ]
           }
         },
         "type": [
           "null",
           "object"
-        ]
+        ],
+        "additionalProperties": false
       },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "supported_action_types": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "supported_download_settings": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "supported_formats": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "supported_formattings": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "supported_visualization_formattings": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "uses_oauth": {
-      "type": [
-        "null",
-        "boolean"
+      "stream": "integrations",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "table-key-properties": [
+              "id"
+            ],
+            "selected": "true",
+            "forced-replication-method": "FULL_TABLE",
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "delegate_oauth"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "description"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "enabled"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "icon_url"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "installed_delegate_oauth"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "integration_hub_id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "label"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "params"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "required_fields"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supported_action_types"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supported_download_settings"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supported_formats"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supported_formattings"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supported_visualization_formattings"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "uses_oauth"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
       ]
     }
-  },
-  "type": [
-    "null",
-    "object"
   ]
 }

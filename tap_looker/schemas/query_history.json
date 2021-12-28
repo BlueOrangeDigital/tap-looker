@@ -1,73 +1,203 @@
 {
-  "additionalProperties": false,
-  "type": ["null","object"],
-  "properties": {
-    "query_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "history_created_date": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "dims_hash_key": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "query_model": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "query_view": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "space_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "look_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "dashboard_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "user_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "history_query_run_count": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "history_total_runtime": {
-      "type": [
-        "null",
-        "number"
+  "streams": [
+    {
+      "tap_stream_id": "query_history",
+      "key_properties": [
+        "query_id",
+        "history_created_date",
+        "dims_hash_key"
       ],
-      "multipleOf": 1e-20
+      "schema": {
+        "properties": {
+          "query_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "history_created_date": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "dims_hash_key": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "query_model": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "query_view": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "space_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "look_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "dashboard_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "user_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "history_query_run_count": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "history_total_runtime": {
+            "multipleOf": 1e-20,
+            "type": [
+              "null",
+              "number"
+            ]
+          }
+        },
+        "type": [
+          "null",
+          "object"
+        ],
+        "additionalProperties": false
+      },
+      "stream": "query_history",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "table-key-properties": [
+              "query_id",
+              "history_created_date",
+              "dims_hash_key"
+            ],
+            "selected": "true",
+            "forced-replication-method": "FULL_TABLE",
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "query_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "history_created_date"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "dims_hash_key"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "query_model"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "query_view"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "space_id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "look_id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "dashboard_id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "user_id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "history_query_run_count"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "history_total_runtime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
     }
-  }
+  ]
 }

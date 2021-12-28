@@ -1,63 +1,170 @@
 {
-  "additionalProperties": false,
-  "properties": {
-    "can_add_to_content_metadata": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "contains_current_user": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "external_group_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "externally_managed": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "include_by_default": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "role_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "user_count": {
-      "type": [
-        "null",
-        "integer"
+  "streams": [
+    {
+      "tap_stream_id": "role_groups",
+      "key_properties": [
+        "id",
+        "role_id"
+      ],
+      "schema": {
+        "properties": {
+          "can_add_to_content_metadata": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "contains_current_user": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "external_group_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "externally_managed": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "include_by_default": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "role_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "user_count": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": [
+          "null",
+          "object"
+        ],
+        "additionalProperties": false
+      },
+      "stream": "role_groups",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "table-key-properties": [
+              "id",
+              "role_id"
+            ],
+            "selected": "true",
+            "forced-replication-method": "FULL_TABLE",
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "can_add_to_content_metadata"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "contains_current_user"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "external_group_id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "externally_managed"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "include_by_default"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "role_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "user_count"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
       ]
     }
-  },
-  "type": [
-    "null",
-    "object"
   ]
 }
