@@ -14,7 +14,7 @@
 
 STREAMS = {
     'color_collections': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'ColorCollection'
     },
@@ -24,31 +24,31 @@ STREAMS = {
         'swagger_object': 'DBConnection'
     },
     'dashboards': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'DashboardBase',
         'children': {
             'dashboard_elements': {
                 'path': 'dashboards/{}/dashboard_elements',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'DashboardElement',
                 'children': {
                     'queries': {
                         'path': 'queries/[query_id]',
-                        'key_properties': ['id'],
+                        'key_properties': [],
                         'replication_method': 'FULL_TABLE',
                         'swagger_object': 'Query'
                     },
                     'merge_queries': {
                         'path': 'merge_queries/[merge_result_id]',
-                        'key_properties': ['id'],
+                        'key_properties': [],
                         'replication_method': 'FULL_TABLE',
                         'swagger_object': 'MergeQuery',
                         'children': {
                             'queries': {
                                 'path': 'queries/[query_id]',
-                                'key_properties': ['id'],
+                                'key_properties': [],
                                 'replication_method': 'FULL_TABLE',
                                 'swagger_object': 'Query'
                             }
@@ -58,68 +58,68 @@ STREAMS = {
             },
             'dashboard_filters': {
                 'path': 'dashboards/{}/dashboard_filters',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'DashboardFilter'
             },
             'dashboard_layouts': {
                 'path': 'dashboards/{}/dashboard_layouts',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'DashboardLayout'
             },
             'content_metadata': {
                 'path': 'content_metadata/[content_metadata_id]',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ContentMeta'
             },
             'scheduled_plans': {
                 'path': 'scheduled_plans/dashboard/{}?all_users=true',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ScheduledPlan'
             }
         }
     },
     'datagroups': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'Datagroup'
     },
     'folders': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'Folder',
         'children': {
             'content_metadata': {
                 'path': 'content_metadata?parent_id=[content_metadata_id]',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ContentMeta'
             },
             'content_metadata': {
                 'path': 'content_metadata/[content_metadata_id]',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ContentMeta'
             },
             'content_metadata_access': {
                 'path': 'content_metadata_access?content_metadata_id=[content_metadata_id]',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ContentMetaGroupUser'
             }
         }
     },
     'groups': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'Group',
         'children': {
             'groups_in_group': {
                 'path': 'groups/{}/groups',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'Group',
                 'parent': 'parent_group'
@@ -127,43 +127,43 @@ STREAMS = {
         }
     },
     'homepages': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'Homepage',
         'children': {
             'content_metadata': {
                 'path': 'content_metadata/[content_metadata_id]',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ContentMeta'
             },
             'content_metadata_access': {
                 'path': 'content_metadata_access?content_metadata_id=[content_metadata_id]',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ContentMetaGroupUser'
             }
         }
     },
     'integration_hubs': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'IntegrationHub'
     },
     'integrations': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'Integration'
     },
     'lookml_dashboards': {
         'path': 'dashboards',
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'DashboardBase',
         'children': {
             'scheduled_plans': {
                 'path': 'scheduled_plans/lookml_dashboard/{}?all_users=true',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ScheduledPlan'
             }
@@ -182,7 +182,7 @@ STREAMS = {
                 'children': {
                     'explores': {
                         'path': 'lookml_models/{}/explores/[child_id]',
-                        'key_properties': ['id'],
+                        'key_properties': [],
                         'replication_method': 'FULL_TABLE',
                         'swagger_object': 'LookmlModelExplore'
                     }
@@ -191,37 +191,37 @@ STREAMS = {
         }
     },
     'looks': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'Look',
         'children': {
             'queries': {
                 'path': 'queries/[query_id]',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'Query'
             },
             'content_metadata': {
                 'path': 'content_metadata/[content_metadata_id]',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ContentMeta'
             },
             'scheduled_plans': {
                 'path': 'scheduled_plans/look/{}?all_users=true',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ScheduledPlan'
             }
         }
     },
     'model_sets': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'ModelSet'
     },
     'permission_sets': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'PermissionSet'
     },
@@ -231,7 +231,7 @@ STREAMS = {
         'swagger_object': 'Permission'
     },
     'projects': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'Project',
         'children': {
@@ -252,7 +252,7 @@ STREAMS = {
         }
     },
     'roles': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'Role',
         'children': {
@@ -267,48 +267,48 @@ STREAMS = {
     },
     'scheduled_plans': {
         'path': 'scheduled_plans?all_users=true',
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'ScheduledPlan'
     },
     'spaces': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'Space',
         'children': {
             'content_metadata': {
                 'path': 'content_metadata?parent_id=[content_metadata_id]',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ContentMeta'
             },
             'content_metadata': {
                 'path': 'content_metadata/[content_metadata_id]',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ContentMeta'
             },
             'content_metadata_access': {
                 'path': 'content_metadata_access?content_metadata_id=[content_metadata_id]',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ContentMetaGroupUser'
             }
         }
     },
     'themes': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'Theme'
     },
     'user_attributes': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'UserAttribute',
         'children': {
             'user_attribute_group_values': {
                 'path': 'user_attributes/{}/group_values',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'UserAttributeGroupValue'
             }
@@ -320,7 +320,7 @@ STREAMS = {
         'swagger_object': 'UserLoginLockout'
     },
     'users': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'User',
         'children': {
@@ -332,19 +332,19 @@ STREAMS = {
             },
             'user_sessions': {
                 'path': 'users/{}/sessions',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'Session'
             },
             'content_favorites': {
                 'path': 'content_favorite/search?user_id={}',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ContentFavorite'
             },
             'content_views': {
                 'path': 'content_view/search?user_id={}',
-                'key_properties': ['id'],
+                'key_properties': [],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'ContentView'
             }
@@ -356,7 +356,7 @@ STREAMS = {
         'swagger_object': 'ApiVersion'
     },
     'workspaces': {
-        'key_properties': ['id'],
+        'key_properties': [],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'Workspace'
     },
