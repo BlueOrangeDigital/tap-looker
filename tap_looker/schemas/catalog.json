@@ -198,6 +198,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -653,6 +654,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "name"
             ],
@@ -1251,6 +1253,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -2649,6 +2652,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -3089,6 +3093,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -3462,6 +3467,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -3671,6 +3677,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -3963,6 +3970,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -4138,6 +4146,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -4575,6 +4584,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -4945,6 +4955,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -6124,6 +6135,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -6326,6 +6338,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -6447,6 +6460,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -6601,6 +6615,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -7041,6 +7056,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -7228,6 +7244,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -7580,6 +7597,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -8025,6 +8043,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -8267,6 +8286,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "name",
               "project_name"
@@ -8447,6 +8467,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "name",
               "project_name"
@@ -10865,6 +10886,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -11594,6 +11616,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -11952,6 +11975,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -12076,6 +12100,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -12176,6 +12201,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "permission"
             ],
@@ -12327,6 +12353,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -12581,6 +12608,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id",
               "project_id"
@@ -12794,6 +12822,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "name",
               "project_id"
@@ -13114,6 +13143,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -13269,6 +13299,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id",
               "role_id"
@@ -14449,6 +14480,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -14687,6 +14719,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -14850,6 +14883,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -14987,6 +15021,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "key"
             ],
@@ -15844,6 +15879,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -16230,6 +16266,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "user_id",
               "user_attribute_id"
@@ -16433,6 +16470,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -16926,6 +16964,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -17077,6 +17116,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -17273,6 +17313,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "looker_release_version"
             ],
@@ -17445,6 +17486,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "id"
             ],
@@ -17560,6 +17602,7 @@
         {
           "breadcrumb": [],
           "metadata": {
+            "selected": "true",
             "table-key-properties": [
               "query_id",
               "history_created_date",
